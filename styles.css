@@ -1,0 +1,2796 @@
+
+   /*GOOGLE FONT*/
+
+   /*Cinzel is used for the restaurant name and major*/
+   /*headings to create a refined restaurant appearance.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+
+   /*FONT AWESOME*/
+
+   /*Font Awesome is used in the menu options.*/
+
+   /*Utensils are used for The Copper Cut.*/
+   /*A plant icon is used for the Garden Salad.*/
+   /*A fish icon is used for the Salmon.*/
+
+
+.fa-solid,
+.fa-regular,
+.fa-brands {
+
+    color: #c9874f;
+
+}
+
+
+
+.dish-name i {
+
+    margin-right: 8px;
+
+}
+
+
+/*reset*/
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    background: #0b0907;
+
+    color: #f4eee6;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+}
+
+
+
+   /*IMAGE STYLING*/
+
+   /*Prevents images from overflowing their containers.*/
+
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+   /*REUSABLE CARD CLASS*/
+
+   /*Can be reused on any page.*/
+
+
+.card {
+
+    background: #120e0b;
+
+    padding: 30px;
+
+    border: 1px solid rgba(184, 115, 61, 0.35);
+
+    box-shadow:
+            0 15px 40px rgba(0, 0, 0, 0.35);
+
+}
+
+
+/*navigation*/
+
+nav {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    background:
+            linear-gradient(
+                    to bottom,
+                    rgba(5, 4, 3, 0.96),
+                    rgba(5, 4, 3, 0.55),
+                    transparent
+            );
+
+    z-index: 20;
+
+}
+
+
+/* Restaurant Logo */
+
+nav img {
+
+    width: 175px;
+
+}
+
+
+/* Horizontal Navigation */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 42px;
+
+}
+
+
+.nav-links a {
+
+    position: relative;
+
+    color: #eee5da;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition:
+            color 0.3s ease,
+            background 0.3s ease;
+
+}
+
+
+/* Navbar Hover */
+
+.nav-links a:hover {
+
+    color: #c9874f;
+
+}
+
+
+/* Active Page */
+
+.nav-links .active {
+
+    color: #c9874f;
+
+}
+
+
+/* Active page underline */
+
+.nav-links .active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -10px;
+
+    width: 24px;
+
+    height: 1px;
+
+    background: #b8733d;
+
+    transform: translateX(-50%);
+
+}
+
+
+/* Reservation Button */
+
+.nav-reservation {
+
+    padding: 13px 20px;
+
+    border: 1px solid rgba(201, 135, 79, 0.8);
+
+}
+
+
+.nav-reservation:hover {
+
+    background: rgba(201, 135, 79, 0.15);
+
+}
+
+
+
+
+/* Google Font used for major restaurant headings */
+
+.hero h1,
+.menu-hero h1,
+.menu-intro h1,
+.reservation-hero h1 {
+
+    font-family: "Cinzel", Georgia, serif;
+
+}
+
+
+/* Other section headings */
+
+.intro h2,
+.menu-intro h2,
+.menu-heading h2,
+.reservation-intro h2,
+.reservation-details h2,
+.form-heading h2 {
+
+    font-family: "Cinzel", Georgia, serif;
+
+}
+
+
+   /*MEET THE CHEF SECTION*/
+
+   /*Two-column layout:*/
+   /*Chef image on the left*/
+   /*Chef information on the right*/
+
+
+.chef-section {
+
+    padding: 120px 7%;
+
+    background: #0b0907;
+
+}
+
+
+/* Centers the section and creates two columns */
+
+.chef-container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+
+.chef-image {
+
+    position: relative;
+
+    padding: 10px;
+
+    border: 1px solid rgba(184, 115, 61, 0.4);
+
+    background: #080604;
+
+    box-shadow:
+            0 25px 60px rgba(0, 0, 0, 0.55);
+
+}
+
+
+/* Decorative copper line */
+
+.chef-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 25px;
+    left: -15px;
+
+    width: 2px;
+
+    height: 100px;
+
+    background: #b8733d;
+
+}
+
+
+.chef-image img {
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+
+.chef-content {
+
+    max-width: 600px;
+
+}
+
+
+/* Small copper heading */
+
+.chef-label {
+
+    margin: 0 0 18px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #c9874f;
+
+}
+
+
+/* Chef Name */
+
+.chef-content h2 {
+
+    margin: 0;
+
+    font-family: "Cinzel", Georgia, serif;
+
+    font-size: clamp(36px, 4vw, 55px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    color: #f1e7dc;
+
+}
+
+
+/* Executive Chef title */
+
+.chef-title {
+
+    margin: 18px 0 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #b8733d;
+
+}
+
+
+/* Biography paragraphs */
+
+.chef-description {
+
+    margin: 0 0 20px;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #aaa097;
+
+}
+
+
+/* Chef Quote */
+
+.chef-quote {
+
+    margin: 35px 0 15px;
+
+    padding: 25px 0 25px 25px;
+
+    border-left: 2px solid #b8733d;
+
+    font-size: 21px;
+
+    font-style: italic;
+
+    line-height: 1.7;
+
+    color: #ddd2c5;
+
+}
+
+
+/* Chef signature */
+
+.chef-signature {
+
+    margin: 15px 0 0;
+
+    font-family: "Cinzel", Georgia, serif;
+
+    font-size: 16px;
+
+    color: #c9874f;
+
+}
+
+
+/* =========================================================
+   MOBILE MEET THE CHEF
+
+   Changes the two columns into one column on phones.
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+    .chef-section {
+
+        padding: 80px 20px;
+
+    }
+
+
+    .chef-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+
+    .chef-image {
+
+        max-width: 500px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .chef-image img {
+
+        height: 500px;
+
+    }
+
+
+    .chef-content {
+
+        max-width: 500px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .chef-content h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .chef-description {
+
+        font-size: 16px;
+
+    }
+
+
+    .chef-quote {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* Shared Small Copper Labels */
+
+.section-label,
+.intro-label,
+.eyebrow,
+.menu-eyebrow,
+.reservation-eyebrow {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-transform: uppercase;
+
+    color: #b8733d;
+
+}
+
+
+/* =========================================================
+   DECORATIVE ELEMENTS
+   ========================================================= */
+
+.gold-line {
+
+    width: 90px;
+
+    height: 1px;
+
+    margin: 28px 0;
+
+    background: #b8733d;
+
+}
+
+
+.menu-divider {
+
+    width: 260px;
+
+    margin: 32px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+}
+
+
+.menu-divider span {
+
+    width: 100px;
+
+    height: 1px;
+
+    background: rgba(184, 115, 61, 0.55);
+
+}
+
+
+.menu-diamond {
+
+    width: 9px;
+
+    height: 9px;
+
+    border: 1px solid #b8733d;
+
+    transform: rotate(45deg);
+
+}
+
+
+/* =========================================================
+   HOME PAGE HERO
+   ========================================================= */
+
+.hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 0 7% 9%;
+
+    overflow: hidden;
+
+    background-image:
+
+            linear-gradient(
+                    90deg,
+                    rgba(7, 5, 3, 0.88) 0%,
+                    rgba(7, 5, 3, 0.55) 30%,
+                    rgba(7, 5, 3, 0.10) 65%,
+                    rgba(7, 5, 3, 0.35) 100%
+            ),
+
+            linear-gradient(
+                    to top,
+                    rgba(5, 4, 3, 0.85) 0%,
+                    rgba(5, 4, 3, 0.10) 45%,
+                    rgba(5, 4, 3, 0.20) 100%
+            ),
+
+            url("./images/CopperCrateImg1.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+.hero-content {
+
+    max-width: 650px;
+
+    padding-left: 20px;
+
+    border-left: 2px solid #b8733d;
+
+}
+
+
+.eyebrow {
+
+    margin: 0 0 18px;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.hero h1 {
+
+    margin: 0;
+
+    font-size: clamp(48px, 6vw, 82px);
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    color: #f5eee5;
+
+    text-shadow:
+            0 3px 15px rgba(0, 0, 0, 0.8);
+
+}
+
+
+.tagline {
+
+    max-width: 550px;
+
+    margin: 0 0 30px;
+
+    font-size: 21px;
+
+    line-height: 1.6;
+
+    color: #ddd2c5;
+
+}
+
+
+
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.button {
+
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.button-primary {
+
+    background: #a86435;
+
+    border: 1px solid #c68a59;
+
+    color: white;
+
+}
+
+
+.button-primary:hover {
+
+    background: #c07a45;
+
+    transform: translateY(-2px);
+
+}
+
+
+.button-secondary {
+
+    border: 1px solid rgba(230, 220, 210, 0.6);
+
+    color: #eee5da;
+
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+
+.button-secondary:hover {
+
+    border-color: #c9874f;
+
+    color: #c9874f;
+
+}
+
+
+
+
+.scroll-indicator {
+
+    position: absolute;
+
+    right: 6%;
+
+    bottom: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    writing-mode: vertical-rl;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+
+.scroll-line {
+
+    width: 1px;
+
+    height: 65px;
+
+    background: rgba(201, 135, 79, 0.7);
+
+}
+
+
+/* =========================================================
+   HOME INTRODUCTION
+   ========================================================= */
+
+.intro {
+
+    min-height: 400px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 90px 25px;
+
+    background: #0b0907;
+
+}
+
+
+.intro-content {
+
+    max-width: 800px;
+
+}
+
+
+.intro-label {
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.intro h2 {
+
+    margin: 20px 0;
+
+    font-size: 42px;
+
+    font-weight: 400;
+
+}
+
+
+.intro p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #aaa098;
+
+}
+
+
+
+
+.menu-hero {
+
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 150px 25px 80px;
+
+    background:
+
+            radial-gradient(
+                    circle at center,
+                    rgba(147, 80, 38, 0.18),
+                    transparent 50%
+            ),
+
+            linear-gradient(
+                    to bottom,
+                    #080604,
+                    #120c08
+            );
+
+    overflow: hidden;
+
+}
+
+
+.menu-hero-content {
+
+    max-width: 850px;
+
+}
+
+
+.menu-eyebrow {
+
+    margin-bottom: 22px;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+}
+
+
+
+
+.menu-intro {
+
+    padding: 170px 25px 110px;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+            radial-gradient(
+                    circle at center top,
+                    rgba(147, 80, 38, 0.15),
+                    transparent 50%
+            ),
+
+            #0d0907;
+
+}
+
+
+.menu-intro-content {
+
+    max-width: 800px;
+
+}
+
+
+.menu-intro h1 {
+
+    margin: 20px 0;
+
+    font-size: clamp(52px, 7vw, 82px);
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #eee4d8;
+
+}
+
+
+.menu-intro .gold-line {
+
+    margin: 28px auto;
+
+}
+
+
+.menu-intro p {
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #aaa097;
+
+}
+
+
+
+.menu-feature {
+
+    padding: 20px 7% 120px;
+
+    display: flex;
+
+    justify-content: center;
+
+    background: #090705;
+
+}
+
+
+.menu-image-frame {
+
+    position: relative;
+
+    width: min(1100px, 100%);
+
+    padding: 10px;
+
+    border: 1px solid rgba(184, 115, 61, 0.4);
+
+    background: #070504;
+
+    box-shadow:
+            0 30px 80px rgba(0, 0, 0, 0.7);
+
+}
+
+
+.menu-image-frame img {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: 520px;
+
+    object-fit: cover;
+
+}
+
+
+.image-caption {
+
+    position: absolute;
+
+    left: 55px;
+
+    bottom: 45px;
+
+    padding-left: 20px;
+
+    border-left: 2px solid #b8733d;
+
+    text-shadow:
+            0 3px 15px rgba(0, 0, 0, 0.9);
+
+}
+
+
+.image-caption span {
+
+    display: block;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #d09a6a;
+
+}
+
+
+.image-caption strong {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: "Cinzel", Georgia, serif;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    color: white;
+
+}
+
+
+
+
+.menu-section {
+
+    padding: 120px 6%;
+
+    background: #0d0a08;
+
+}
+
+
+.menu-heading {
+
+    max-width: 720px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+
+}
+
+
+.menu-heading h2 {
+
+    margin: 18px 0;
+
+    font-size: 46px;
+
+    font-weight: 400;
+
+    color: #eee4d8;
+
+}
+
+
+.menu-heading p:last-child {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #91877f;
+
+}
+
+
+/* =========================================================
+   TABLE STYLING
+
+   Includes:
+   - Borders
+   - Caption styling
+   - Zebra striping
+   - Hover effect
+   ========================================================= */
+
+.menu-table-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    overflow-x: auto;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border: 1px solid rgba(184, 115, 61, 0.4);
+
+    background: #100c09;
+
+}
+
+
+caption {
+
+    padding: 20px;
+
+    font-family: "Cinzel", Georgia, serif;
+
+    font-size: 16px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #c9874f;
+
+    caption-side: top;
+
+}
+
+
+thead {
+
+    background: rgba(184, 115, 61, 0.14);
+
+}
+
+
+th {
+
+    padding: 20px;
+
+    text-align: left;
+
+    border: 1px solid rgba(184, 115, 61, 0.25);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #d09a6a;
+
+}
+
+
+td {
+
+    padding: 25px 20px;
+
+    border: 1px solid rgba(184, 115, 61, 0.18);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #aaa097;
+
+}
+
+
+/* Zebra Striping */
+
+tbody tr:nth-child(even) {
+
+    background: rgba(184, 115, 61, 0.06);
+
+}
+
+
+tbody tr:nth-child(odd) {
+
+    background: rgba(255, 255, 255, 0.01);
+
+}
+
+
+/* Table Hover */
+
+tbody tr:hover {
+
+    background: rgba(184, 115, 61, 0.12);
+
+}
+
+
+/* Dish Name */
+
+.dish-name {
+
+    font-size: 19px;
+
+    color: #eee3d6;
+
+}
+
+
+/* Price */
+
+.dish-price,
+.menu-price {
+
+    font-size: 18px;
+
+    color: #d2a06e;
+
+}
+
+
+/* Notes */
+
+.dish-notes {
+
+    color: #bd9c7d;
+
+}
+
+
+/* =========================================================
+   CHEF NOTE
+   ========================================================= */
+
+.chef-note {
+
+    padding: 120px 25px;
+
+    text-align: center;
+
+    background: #080604;
+
+}
+
+
+.chef-note-content {
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+
+.chef-symbol {
+
+    margin-bottom: 30px;
+
+    color: #b8733d;
+
+    font-size: 24px;
+
+}
+
+
+.chef-note blockquote,
+.reservation-closing blockquote {
+
+    margin: 30px auto;
+
+    max-width: 650px;
+
+    font-size: 32px;
+
+    font-style: italic;
+
+    line-height: 1.55;
+
+    color: #e3d8cc;
+
+}
+
+
+
+
+.reservation-hero {
+
+    min-height: 570px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 150px 25px 80px;
+
+    background:
+
+            radial-gradient(
+                    circle,
+                    rgba(158, 84, 39, 0.20),
+                    transparent 48%
+            ),
+
+            linear-gradient(
+                    135deg,
+                    #070504,
+                    #130d09,
+                    #080604
+            );
+
+}
+
+
+.reservation-hero-content {
+
+    max-width: 900px;
+
+}
+
+
+.reservation-eyebrow {
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.reservation-hero h1 {
+
+    margin: 0;
+
+    font-size: clamp(55px, 8vw, 100px);
+
+    font-weight: 500;
+
+    color: #f3eadf;
+
+}
+
+
+.reservation-tagline {
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    color: #aaa097;
+
+}
+
+
+
+
+.reservation-intro {
+
+    padding: 110px 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #0b0806;
+
+}
+
+
+.reservation-intro-content {
+
+    max-width: 800px;
+
+}
+
+
+.reservation-intro h2 {
+
+    font-size: 46px;
+
+    font-weight: 400;
+
+    color: #eee4d8;
+
+}
+
+
+.reservation-intro .gold-line {
+
+    margin: 28px auto;
+
+}
+
+
+.reservation-intro p {
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #aaa097;
+
+}
+
+
+
+
+.reservation-section {
+
+    padding: 120px 7%;
+
+    background: #0d0a08;
+
+}
+
+
+.reservation-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 90px;
+
+}
+
+
+.reservation-details h2 {
+
+    font-size: 47px;
+
+    font-weight: 400;
+
+    color: #eee4d8;
+
+}
+
+
+.reservation-details > p {
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    color: #9e948c;
+
+}
+
+
+.reservation-info {
+
+    margin-top: 50px;
+
+    border-top: 1px solid rgba(184, 115, 61, 0.25);
+
+}
+
+
+.info-item {
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid rgba(184, 115, 61, 0.18);
+
+}
+
+
+.info-item span {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #c9874f;
+
+}
+
+
+.info-item p {
+
+    color: #aaa097;
+
+    line-height: 1.7;
+
+}
+
+
+
+.reservation-form-wrapper {
+
+    padding: 50px;
+
+    border: 1px solid rgba(184, 115, 61, 0.35);
+
+    background: #120e0b;
+
+    box-shadow:
+            0 30px 70px rgba(0, 0, 0, 0.45);
+
+}
+
+
+.form-heading {
+
+    margin-bottom: 40px;
+
+}
+
+
+.form-heading h2 {
+
+    margin: 14px 0 0;
+
+    font-size: 37px;
+
+    font-weight: 400;
+
+    color: #eee4d8;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 25px;
+
+}
+
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+/* Form Labels */
+
+label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #c18c60;
+
+}
+
+
+/* Consistent Form Widths */
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid rgba(184, 115, 61, 0.35);
+
+    outline: none;
+
+    background: #080604;
+
+    color: #eee4d8;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #c9874f;
+
+    background: #0d0907;
+
+}
+
+
+textarea {
+
+    resize: vertical;
+
+}
+
+
+
+
+.seating-fieldset {
+
+    margin: 10px 0 25px;
+
+    padding: 20px;
+
+    border: 1px solid rgba(184, 115, 61, 0.35);
+
+}
+
+
+.seating-fieldset legend {
+
+    padding: 0 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #c18c60;
+
+}
+
+
+.radio-option {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 12px 0;
+
+}
+
+
+.radio-option input {
+
+    width: auto;
+
+    margin: 0;
+
+    accent-color: #b8733d;
+
+}
+
+
+.radio-option label {
+
+    margin: 0;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.newsletter-option {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 25px 0;
+
+}
+
+
+.newsletter-option input {
+
+    width: auto;
+
+    accent-color: #b8733d;
+
+}
+
+
+.newsletter-option label {
+
+    margin: 0;
+
+    cursor: pointer;
+
+}
+
+
+
+.reservation-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.reservation-submit,
+.reservation-reset {
+
+    flex: 1;
+
+    padding: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.reservation-submit {
+
+    border: 1px solid #c68a59;
+
+    background: #9e6033;
+
+    color: white;
+
+}
+
+
+.reservation-submit:hover {
+
+    background: #bd7541;
+
+    transform: translateY(-2px);
+
+}
+
+
+.reservation-reset {
+
+    border: 1px solid rgba(230, 220, 210, 0.4);
+
+    background: transparent;
+
+    color: #ddd2c5;
+
+}
+
+
+.reservation-reset:hover {
+
+    border-color: #c9874f;
+
+    color: #c9874f;
+
+}
+
+
+.form-note {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    color: #746b64;
+
+}
+
+
+
+
+.reservation-closing {
+
+    padding: 120px 25px;
+
+    text-align: center;
+
+    background: #080604;
+
+}
+
+
+.reservation-closing-content {
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+
+/*footer*/
+
+footer {
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(184, 115, 61, 0.25);
+
+    background: #080604;
+
+    color: #777;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/*the below is for the mobile version of the site when viewed. I did learn about the use of the dev tools to be able to test the
+differences in windows and on different medium types. below is ensuring that without the use of javascript I can make sure it looks
+decent when viewed on various window sizes. */
+
+
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+
+    /* =====================================
+       MOBILE NAVIGATION
+       ====================================== */
+
+    nav {
+
+        height: 90px;
+
+        padding: 0 20px;
+
+    }
+
+
+    nav img {
+
+        width: 130px;
+
+    }
+
+
+    .nav-links {
+
+        gap: 12px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 9px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .nav-reservation {
+
+        padding: 9px;
+
+    }
+
+
+
+    /* =====================================
+       MOBILE HOME PAGE
+       ====================================== */
+
+    .hero {
+
+        padding: 150px 25px 80px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 46px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .scroll-indicator {
+
+        display: none;
+
+    }
+
+
+
+    /* =====================================
+       MOBILE MENU INTRO
+       ====================================== */
+
+    .menu-intro {
+
+        padding: 140px 25px 80px;
+
+    }
+
+
+    .menu-intro h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .menu-intro h2,
+    .menu-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+
+
+    /* =====================================
+       MOBILE MENU IMAGE
+       ====================================== */
+
+    .menu-feature {
+
+        padding: 10px 20px 80px;
+
+    }
+
+
+    .menu-image-frame img {
+
+        height: 350px;
+
+    }
+
+
+    .image-caption {
+
+        left: 30px;
+
+        bottom: 30px;
+
+    }
+
+
+    .image-caption strong {
+
+        font-size: 25px;
+
+    }
+
+
+
+    /* =====================================
+       MOBILE MENU SECTION
+       ====================================== */
+
+    .menu-section {
+
+        padding: 80px 20px;
+
+    }
+
+
+    .menu-heading {
+
+        margin-bottom: 40px;
+
+    }
+
+
+
+    /* =====================================================
+       MOBILE COLLAPSIBLE MENU
+
+       Desktop keeps the traditional table.
+
+       On screens 750px or smaller, every table row becomes
+       a collapsible menu card.
+
+       The name and price are always visible.
+
+       Clicking the menu item shows the description and notes.
+       ===================================================== */
+
+
+    .menu-table-container {
+
+        width: 100%;
+
+        overflow: visible;
+
+    }
+
+
+    /* Change table elements to block layout */
+
+    .menu-table-container table,
+    .menu-table-container tbody {
+
+        display: block;
+
+        width: 100%;
+
+    }
+
+
+    /* Remove the desktop table border */
+
+    .menu-table-container table {
+
+        border: none;
+
+        background: transparent;
+
+    }
+
+
+    /* Hide table column headings on phone */
+
+    .menu-table-container thead {
+
+        display: none;
+
+    }
+
+
+    /* Keep required caption visible */
+
+    .menu-table-container caption {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 0 10px 30px;
+
+        text-align: center;
+
+        font-size: 15px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    /* Each menu row becomes a card */
+
+    .menu-item {
+
+        display: grid;
+
+        grid-template-columns: minmax(0, 1fr) auto;
+
+        width: 100%;
+
+        margin-bottom: 16px;
+
+        padding: 0;
+
+        border: 1px solid rgba(184, 115, 61, 0.35);
+
+        background:
+                linear-gradient(
+                        145deg,
+                        #140f0b,
+                        #0d0907
+                );
+
+        box-shadow:
+                0 8px 22px rgba(0, 0, 0, 0.25);
+
+        cursor: pointer;
+
+        overflow: hidden;
+
+        transition:
+                border-color 0.3s ease,
+                background 0.3s ease,
+                transform 0.3s ease;
+
+    }
+
+
+    .menu-item:hover {
+
+        border-color: #b8733d;
+
+        background: #15100c;
+
+    }
+
+
+    /* Remove desktop cell borders */
+
+    .menu-item td {
+
+        border: none;
+
+    }
+
+
+    /* Dish Name */
+
+    .menu-item .dish-name {
+
+        display: block;
+
+        padding: 22px 10px 22px 20px;
+
+        font-family: "Cinzel", Georgia, serif;
+
+        font-size: 16px;
+
+        line-height: 1.4;
+
+        color: #eee3d6;
+
+    }
+
+
+    /* Add plus symbol */
+
+    .menu-item .dish-name::after {
+
+        content: " +";
+
+        margin-left: 5px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #c9874f;
+
+    }
+
+
+    /* Price remains visible */
+
+    .menu-item .dish-price {
+
+        display: block;
+
+        min-width: 65px;
+
+        padding: 22px 20px 22px 5px;
+
+        font-size: 17px;
+
+        font-weight: bold;
+
+        color: #d2a06e;
+
+        text-align: right;
+
+    }
+
+
+    /* Hide description by default */
+
+    .menu-item .dish-description {
+
+        display: none;
+
+    }
+
+
+    /* Hide notes by default */
+
+    .menu-item .dish-notes {
+
+        display: none;
+
+    }
+
+
+    /* Description becomes visible when open */
+
+    .menu-item.open .dish-description {
+
+        display: block;
+
+        grid-column: 1 / -1;
+
+        padding: 0 20px 16px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+        color: #aaa097;
+
+        border-top:
+                1px solid rgba(184, 115, 61, 0.15);
+
+        padding-top: 18px;
+
+    }
+
+
+    /* Notes become visible when open */
+
+    .menu-item.open .dish-notes {
+
+        display: block;
+
+        grid-column: 1 / -1;
+
+        padding: 0 20px 20px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+        text-transform: uppercase;
+
+        color: #c9874f;
+
+    }
+
+
+    /* Change plus to minus when opened */
+
+    .menu-item.open .dish-name::after {
+
+        content: " −";
+
+    }
+
+
+    /* =========================================================
+       LOCATION SECTION
+       ========================================================= */
+
+    .location-section {
+
+        padding: 120px 7%;
+
+        background: #080604;
+
+    }
+
+
+    /* Main two-column layout */
+
+    .location-container {
+
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        align-items: center;
+
+        gap: 80px;
+
+    }
+
+
+    /* =========================================================
+       LOCATION TEXT
+       ========================================================= */
+
+    .location-content {
+
+        max-width: 560px;
+
+    }
+
+
+    /* Small copper heading */
+
+    .location-label {
+
+        margin: 0 0 18px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 11px;
+
+        letter-spacing: 4px;
+
+        text-transform: uppercase;
+
+        color: #c9874f;
+
+    }
+
+
+    /* Main heading */
+
+    .location-content h2 {
+
+        margin: 0;
+
+        font-family: "Cinzel", Georgia, serif;
+
+        font-size: clamp(38px, 4vw, 55px);
+
+        font-weight: 400;
+
+        line-height: 1.2;
+
+        color: #f1e7dc;
+
+    }
+
+
+    /* Small subtitle */
+
+    .location-title {
+
+        margin: 18px 0 0;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+
+        text-transform: uppercase;
+
+        color: #b8733d;
+
+    }
+
+
+    /* Description */
+
+    .location-description {
+
+        margin: 0 0 20px;
+
+        font-size: 17px;
+
+        line-height: 1.9;
+
+        color: #aaa097;
+
+    }
+
+
+    /* =========================================================
+       ADDRESS AND HOURS
+       ========================================================= */
+
+    .location-info {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+
+        margin: 38px 0;
+
+        padding: 28px 0;
+
+        border-top: 1px solid rgba(184, 115, 61, 0.3);
+
+        border-bottom: 1px solid rgba(184, 115, 61, 0.3);
+
+    }
+
+
+    .location-info-item span {
+
+        display: block;
+
+        margin-bottom: 12px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+
+        text-transform: uppercase;
+
+        color: #c9874f;
+
+    }
+
+
+    .location-info-item p {
+
+        margin: 5px 0;
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        color: #aaa097;
+
+    }
+
+
+    /* =========================================================
+       LOCATION IMAGE
+       ========================================================= */
+
+    .location-image {
+
+        position: relative;
+
+        padding: 10px;
+
+        border: 1px solid rgba(184, 115, 61, 0.4);
+
+        background: #070504;
+
+        box-shadow:
+                0 25px 60px rgba(0, 0, 0, 0.55);
+
+    }
+
+
+    /* Map image */
+
+    .location-image img {
+
+        width: 100%;
+
+        height: 520px;
+
+        object-fit: cover;
+
+    }
+
+
+    /* Copper decorative line */
+
+    .location-image::before {
+
+        content: "";
+
+        position: absolute;
+
+        top: 25px;
+
+        right: -15px;
+
+        width: 2px;
+
+        height: 100px;
+
+        background: #b8733d;
+
+    }
+
+
+    /* Caption over map */
+
+    .location-caption {
+
+        position: absolute;
+
+        left: 35px;
+
+        bottom: 35px;
+
+        padding: 14px 18px;
+
+        border-left: 2px solid #b8733d;
+
+        background: rgba(7, 5, 3, 0.88);
+
+    }
+
+
+    .location-caption span {
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 9px;
+
+        letter-spacing: 3px;
+
+        text-transform: uppercase;
+
+        color: #c9874f;
+
+    }
+
+
+    .location-caption p {
+
+        margin: 6px 0 0;
+
+        font-family: "Cinzel", Georgia, serif;
+
+        font-size: 18px;
+
+        color: #f1e7dc;
+
+    }
+
+
+    /* =========================================================
+       MOBILE LOCATION SECTION
+       ========================================================= */
+
+    @media (max-width: 750px) {
+
+        .location-section {
+
+            padding: 80px 20px;
+
+        }
+
+
+        .location-container {
+
+            grid-template-columns: 1fr;
+
+            gap: 50px;
+
+        }
+
+
+        .location-content {
+
+            max-width: 500px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .location-content h2 {
+
+            font-size: 35px;
+
+        }
+
+
+        .location-info {
+
+            grid-template-columns: 1fr;
+
+            gap: 25px;
+
+        }
+
+
+        .location-image {
+
+            max-width: 500px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .location-image img {
+
+            height: 400px;
+
+        }
+
+
+        .location-caption {
+
+            left: 25px;
+
+            bottom: 25px;
+
+        }
+
+    }
+
+
+
+
+
+
+
+    /* =====================================
+       MOBILE RESERVATIONS
+       ====================================== */
+
+    .reservation-hero {
+
+        min-height: 450px;
+
+        padding: 130px 25px 70px;
+
+    }
+
+
+    .reservation-hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .reservation-intro {
+
+        padding: 80px 25px;
+
+    }
+
+
+    .reservation-intro h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .reservation-section {
+
+        padding: 80px 20px;
+
+    }
+
+
+    .reservation-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+
+    .reservation-form-wrapper {
+
+        padding: 30px 22px;
+
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+
+    .reservation-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .chef-note blockquote,
+    .reservation-closing blockquote {
+
+        font-size: 24px;
+
+    }
+
+
+
+
+
+
+}
