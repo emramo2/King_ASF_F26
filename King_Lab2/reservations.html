@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Reservations | The Copper Crate Steakhouse
+    </title>
+
+    <!-- Bootstrap CSS -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <!-- My CSS -->
+    <link
+            rel="stylesheet"
+            href="styles.css">
+
+</head>
+
+
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <!-- Restaurant Logo -->
+
+        <a class="navbar-brand" href="index.html">
+
+            <img
+                    src="images/CopperCrateLogo.png"
+                    alt="The Copper Crate Steakhouse Logo"
+                    class="navbar-logo">
+
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Navigation Links -->
+
+        <div
+                class="collapse navbar-collapse"
+                id="navbarNav">
+
+            <div class="navbar-nav">
+
+                <a
+                        class="nav-link"
+                        href="index.html">
+                    Home
+                </a>
+
+                <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="menu.html">
+                    Menu
+                </a>
+
+                <a
+                        class="nav-link"
+                        href="reservations.html">
+                    Reservations
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<main>
+
+
+<!--    reservations-->
+
+    <section class="reservation-hero">
+
+
+        <div class="reservation-hero-content">
+
+
+
+<!-- i learned eyebrows are the dividers between the title and the subtitle. Ive used something like this in a similar project but didnt know they had a fun name like this -->
+
+            <p class="reservation-eyebrow">
+                The Copper Crate • Est. 2026
+            </p>
+
+
+            <h1>
+                Reservations
+            </h1>
+
+
+            <div class="menu-divider">
+
+                <span></span>
+
+                <div class="menu-diamond"></div>
+
+                <span></span>
+
+            </div>
+
+
+            <p class="reservation-tagline">
+                An evening of fire, craft, and exceptional dining awaits.
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+<!--reservation intro-->
+
+    <section class="reservation-intro">
+
+
+        <div class="reservation-intro-content">
+
+
+            <p class="section-label">
+                Your Table Awaits
+            </p>
+
+
+            <h2>
+                Join Us For Dinner
+            </h2>
+
+
+            <div class="gold-line"></div>
+
+
+            <p>
+                Reservations at The Copper Crate are
+                <strong>request only</strong>.
+                Submitting this form does not guarantee a reservation.
+                Our team will review your request and contact you
+                to confirm availability.
+            </p>
+
+
+            <p>
+                Please complete the reservation request below.
+                We look forward to welcoming you for an evening
+                of fine steaks, open-fire cooking, and refined service.
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+<!--reservation form-->
+
+    <section class="reservation-section">
+
+
+        <div class="reservation-container">
+
+
+            <!-- =================================
+                 LEFT SIDE
+                 ================================= -->
+
+            <div class="reservation-details">
+
+
+                <p class="section-label">
+                    The Experience
+                </p>
+
+
+                <h2>
+                    Dinner At The Copper Crate
+                </h2>
+
+
+                <p>
+                    Every reservation is prepared with the same
+                    attention to detail as our cuisine. Allow time
+                    to settle in, enjoy the room, and experience
+                    dinner at an unhurried pace.
+                </p>
+
+
+                <div class="reservation-info">
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Dinner Service
+                        </span>
+
+                        <p>
+                            Tuesday – Sunday
+                        </p>
+
+                        <p>
+                            5:00 PM – 11:00 PM
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Dress
+                        </span>
+
+                        <p>
+                            Smart Casual
+                            <p>
+                            Evening Attire Encouraged
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Reservations
+                        </span>
+
+                        <p>
+                            Request Only
+                            <p>
+                            Confirmation Required
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================
+                 RIGHT SIDE - RESERVATION FORM
+                 ================================= -->
+
+            <div class="reservation-form-wrapper">
+
+
+                <div class="form-heading">
+
+                    <p class="section-label">
+                        Reserve
+                    </p>
+
+                    <h2>
+                        Request A Table
+                    </h2>
+
+                </div>
+
+
+                <form id="reservationForm" novalidate>
+
+                    <!-- JavaScript messages appear here -->
+                    <div id="reservationMessage"></div>
+                    <!-- =========================
+                         NAME
+                         Required
+                         Maximum 20 characters
+                         ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                maxlength="20">
+
+
+                    </div>
+
+
+                    <!-- =========================
+                         EMAIL
+                         Required
+                         ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com">
+
+
+                    </div>
+
+
+                    <!-- =========================
+                         PARTY SIZE
+                         Select input
+                         Values 1 through 8
+                         ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="party-size">
+                            Party Size
+                        </label>
+
+                        <select
+                                id="party-size"
+                                name="party-size">
+
+                            <option value="">
+                                Select Party Size
+                            </option>
+
+                            <option value="1">
+                                1 Guest
+                            </option>
+
+                            <option value="2">
+                                2 Guests
+                            </option>
+
+                            <option value="3">
+                                3 Guests
+                            </option>
+
+                            <option value="4">
+                                4 Guests
+                            </option>
+
+                            <option value="5">
+                                5 Guests
+                            </option>
+
+                            <option value="6">
+                                6 Guests
+                            </option>
+
+                            <option value="7">
+                                7 Guests
+                            </option>
+
+                            <option value="8">
+                                8 Guests
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- =========================
+                         DATE AND TIME
+                         Both Required
+                         ========================= -->
+
+                    <div class="form-row">
+
+
+                        <!-- DATE -->
+
+                        <div class="form-group">
+
+                            <label for="date">
+                                Reservation Date
+                            </label>
+
+                            <input
+                                    type="date"
+                                    id="date"
+                                    name="date">
+
+
+                        </div>
+
+
+                        <!-- TIME -->
+
+                        <div class="form-group">
+                            <label for="time"> Reservation Time </label>
+                            <select id="time" name="time" >
+                                <option value="" disabled selected>Select a time</option>
+                                <option value="09:00">5:00 PM</option>
+                                <option value="09:30">5:30 PM</option>
+                                <option value="10:00">6:00 PM</option>
+                                <option value="10:30">6:30 PM</option>
+                                <option value="11:00">7:00 PM</option>
+                                <option value="11:30">8:30 PM</option>
+                                <option value="12:00">9:00 PM</option>
+                                <option value="12:30">10:00 PM</option>
+                                <option value="13:00">10:30 PM</option>
+                            </select>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <!-- =========================
+                         SEATING PREFERENCE
+                         Radio Buttons
+                         Grouped With Fieldset
+                         ========================= -->
+
+                    <fieldset class="seating-fieldset">
+
+
+                        <legend>
+                            Seating Preference
+                        </legend>
+
+
+                        <!-- INDOOR -->
+
+                        <div class="radio-option">
+
+                            <input
+                                    type="radio"
+                                    id="indoor"
+                                    name="seating"
+                                    value="indoor">
+
+
+                            <label for="indoor">
+                                Indoor Dining Room
+                            </label>
+
+                        </div>
+
+
+                        <!-- BAR -->
+
+                        <div class="radio-option">
+
+                            <input
+                                    type="radio"
+                                    id="bar"
+                                    name="seating"
+                                    value="bar">
+
+                            <label for="bar">
+                                Copper Bar
+                            </label>
+
+                        </div>
+
+
+                        <!-- PRIVATE -->
+
+                        <div class="radio-option">
+
+                            <input
+                                    type="radio"
+                                    id="private"
+                                    name="seating"
+                                    value="private">
+
+                            <label for="private">
+                                Private Dining Area
+                            </label>
+
+                        </div>
+
+
+                    </fieldset>
+
+
+                    <!-- =========================
+                         DIETARY NOTES
+                         Optional
+                         Maximum 30 characters
+                         ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="dietary-notes">
+                            Dietary Notes
+                        </label>
+
+                        <textarea
+                                id="dietary-notes"
+                                name="dietary-notes"
+                                rows="4"
+                                placeholder="Allergies or dietary needs"></textarea>
+
+                    </div>
+
+
+                    <!-- =========================
+                         NEWSLETTER
+                         Optional Checkbox
+                         ========================= -->
+
+                    <div class="newsletter-option">
+
+
+                        <input
+                                type="checkbox"
+                                id="newsletter"
+                                name="newsletter"
+                                value="yes">
+
+
+                        <label for="newsletter">
+                            Sign me up for The Copper Crate newsletter
+                        </label>
+
+
+                    </div>
+
+
+                    <!-- =========================
+                         BUTTONS
+                         Submit + Reset
+                         ========================= -->
+
+                    <div class="reservation-buttons">
+
+
+                        <button
+                                type="submit"
+                                class="reservation-submit">
+
+                            Request Reservation
+
+                        </button>
+
+
+                        <button
+                                type="reset"
+                                class="reservation-reset">
+
+                            Reset Form
+
+                        </button>
+
+
+                    </div>
+
+
+                    <p class="form-note">
+                        This is a reservation request only.
+                        Your reservation is not confirmed until
+                        you receive confirmation from our team.
+                    </p>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =====================================
+         CLOSING SECTION
+         ====================================== -->
+
+    <section class="reservation-closing">
+
+
+        <div class="reservation-closing-content">
+
+
+            <div class="chef-symbol">
+                ✦
+            </div>
+
+
+            <p class="section-label">
+                The Copper Crate
+            </p>
+
+
+            <blockquote>
+                “An unforgettable dinner begins
+                long before the first course arrives.”
+            </blockquote>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<!--footer-->
+
+<footer>
+
+    THE COPPER CRATE STEAKHOUSE
+
+    &nbsp; • &nbsp;
+
+    FINE STEAKS
+
+    &nbsp; • &nbsp;
+
+    OPEN FIRE
+
+    &nbsp; • &nbsp;
+
+    CRAFT & TRADITION
+
+</footer>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+</body>
+
+</html>
+
