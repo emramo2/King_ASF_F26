@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "The Copper Cut",
+    "description": "12 oz. Prime Ribeye, roasted garlic butter, seasonal vegetables",
+    "price": 58,
+    "category": "Dinner",
+    "note": "Popular",
+    "img": "images/CopperCrateImgMenu1.png"
+  },
+  {
+    "id": 2,
+    "name": "The Crate Filet",
+    "description": "8 oz. Center-Cut Filet, truffle potato purée, red wine jus",
+    "price": 62,
+    "category": "Dinner",
+    "note": "Chef's Favorite",
+    "img": "images/CopperCrateImgMenu2.png"
+  },
+  {
+    "id": 3,
+    "name": "Black Iron Strip",
+    "description": "14 oz. New York Strip, smoked shallot butter, asparagus",
+    "price": 64,
+    "category": "Dinner",
+    "note": "Signature",
+    "img": "images/CopperCrateImgMenu3.png"
+  },
+  {
+    "id": 4,
+    "name": "The Fire-Roasted Chicken",
+    "description": "Herb-marinated chicken, roasted potatoes, seasonal greens",
+    "price": 36,
+    "category": "Dinner",
+    "note": "Open Fire",
+    "img": "images/CopperCrateImgMenu4.png"
+  },
+  {
+    "id": 5,
+    "name": "Copper Garden Salad",
+    "description": "Charred seasonal vegetables, heirloom grains, herb vinaigrette",
+    "price": 28,
+    "category": "Lunch",
+    "note": "Vegan",
+    "img": "images/CopperCrateImgMenu5.png"
+  },
+  {
+    "id": 6,
+    "name": "The Crate Burger",
+    "description": "Prime beef blend, aged cheddar, caramelized onions, house fries",
+    "price": 26,
+    "category": "Lunch",
+    "note": "Popular",
+    "img": "images/CopperCrateImgMenu6.png"
+  },
+  {
+    "id": 7,
+    "name": "Peppercorn Short Rib",
+    "description": "Braised beef short rib, creamy polenta, peppercorn jus",
+    "price": 48,
+    "category": "Dinner",
+    "note": "Rich & Savory",
+    "img": "images/CopperCrateImgMenu7.png"
+  },
+  {
+    "id": 8,
+    "name": "Copper Crate Salmon",
+    "description": "Fire-roasted Atlantic salmon, lemon beurre blanc, asparagus",
+    "price": 42,
+    "category": "Dinner",
+    "note": "Seasonal",
+    "img": "images/CopperCrateImgMenu8.png"
+  },
+  {
+    "id": 9,
+    "name": "Foundry Breakfast",
+    "description": "Two eggs, smoked bacon, roasted potatoes, and sourdough toast",
+    "price": 19,
+    "category": "Breakfast",
+    "note": "Morning Favorite",
+    "img": "images/CopperCrateImgMenu9.png"
+  },
+  {
+    "id": 10,
+    "name": "Brassworks French Toast",
+    "description": "Brioche French toast, cinnamon butter, berries, and maple syrup",
+    "price": 17.5,
+    "category": "Breakfast",
+    "note": "Sweet",
+    "img": "images/CopperCrateImgMenu10.png"
+  }
+]

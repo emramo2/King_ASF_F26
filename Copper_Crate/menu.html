@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Menu | The Copper Crate Steakhouse
+    </title>
+
+
+    <!-- Bootstrap CSS -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <!-- My CSS -->
+    <link
+            rel="stylesheet"
+            href="styles.css">
+
+
+    <!--    Font awesome kit js link-->
+    <script src="https://kit.fontawesome.com/ba68d90fcd.js" crossorigin="anonymous"></script>
+
+    <!--    favion!-->
+    <link rel="icon" type="image/png" href="images/CopperCrateLogo.png">
+</head>
+
+
+<body>
+
+
+<!--navbar-->
+
+
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <!-- Restaurant Logo -->
+
+        <a class="navbar-brand" href="SplashPage.html">
+
+            <img
+                    src="images/CopperCrateLogo.png"
+                    alt="The Copper Crate Steakhouse Logo"
+                    class="navbar-logo">
+
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Navigation Links -->
+
+        <div
+                class="collapse navbar-collapse"
+                id="navbarNav">
+
+            <div class="navbar-nav">
+
+                <a
+                        class="nav-link"
+                        href="SplashPage.html">
+                    Home
+                </a>
+
+                <a class="nav-link"
+                   aria-current="page"
+                   href="About_Page.html">
+                    About Us
+                </a>
+
+                <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="menu.html">
+                    Menu
+                </a>
+
+                <a
+                        class="nav-link"
+                        href="reservations.html">
+                    Reservations
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!--main menu page-->
+
+<main>
+
+
+<!--   menu introduction-->
+
+    <section class="menu-intro">
+
+
+        <div class="menu-intro-content">
+
+
+            <p class="menu-eyebrow">
+                The Copper Crate
+            </p>
+
+
+            <h1>
+                Our Menu
+            </h1>
+
+
+            <div class="gold-line"></div>
+
+
+            <p>
+                Our menu celebrates the craft of
+                exceptional steakhouse dining.
+                Prime cuts, seasonal ingredients,
+                and open-fire cooking come together
+                in dishes designed with precision,
+                restraint, and timeless flavor.
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Menu carousel -->
+    <section class="menu-section">
+
+        <div class="menu-heading">
+            <p class="section-label">From The Kitchen</p>
+
+            <h2>Signature Selections</h2>
+
+            <p>Use PREV and NEXT to explore our menu.</p>
+        </div>
+
+        <div class="menu-table-container">
+
+            <label for="menuFilter">Choose a category:</label>
+
+            <select id="menuFilter">
+                <option value="All">All Items</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+
+
+            <div id="menuCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="menu-slide">
+
+                            <!-- JavaScript supplies the image -->
+                            <img id="menuImage" alt="" hidden>
+
+                            <div class="menu-details">
+                                <h2 id="menuName"></h2>
+                                <p id="menuDescription"></p>
+                                <p id="menuPrice"></p>
+                                <p id="menuNote"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-controls">
+                    <button
+                            id="prevButton"
+                            class="btn btn-outline-light"
+                            type="button">
+                        PREV
+                    </button>
+
+                    <button
+                            id="nextButton"
+                            class="btn btn-outline-light"
+                            type="button">
+                        NEXT
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!--footer-->
+<footer>
+    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+    CALL US: (555) 867-5309
+    &nbsp; • &nbsp;
+    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+    EMAIL US: TheCopperCrate@CCinc.com &nbsp; • &nbsp;
+    <i class="fa-regular fa-house" style="color: rgb(236, 208, 208);"></i>
+    VISIT US: 14 Foundry Row, Brassworks District New Acadia, NA 11201
+</footer>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
